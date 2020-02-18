@@ -1,6 +1,6 @@
 # Boris Bikes
 
-Brief description of what the project is
+A program that simulates the Boris Bikes of London
 
 ## Getting started
 
