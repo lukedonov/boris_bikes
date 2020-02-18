@@ -4,14 +4,14 @@ Brief description of what the project is
 
 ## Getting started
 
-`git clone path-to-your-repo`
-`command_to_install_dependencies` (e.g. `bundle`)
+`git clone https://github.com/lukedonov/boris_bikes.git`
+`bundle install`
 
 ## Usage
 
-Run ruby boris_bikes.rb from your terminal
+Run `ruby boris_bikes.rb` from your terminal
 
-
+<!-- 
 ## Running tests
 
-`test_command` (e.g. `rspec`)
+`test_command` (e.g. `rspec`) -->
