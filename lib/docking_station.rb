@@ -1,20 +1,53 @@
+require_relative 'bike'
 
 class DockingStation
+  attr_reader :bikes
+
+    # def initialize
+    #   @bike
+    # end
     
     def release_bike
-      @bike = Bike.new
+      Bike.new
     end
 
     def dock(bike)
-        # puts "bike has been docked"
-        @bike = bike
+      # @bikes.push(bike)
+      bike
     end
 
-    def bike 
-        @bike
+    def bike
+
     end
+
+   
 
 end
 
-test = DockingStation.new
-test.dock("bike")
+
+
+
+
+
+
+
+
+
+
+ # def dock(bike)
+        # puts "bike has been docked"
+        # @bike = bike
+    # end
+
+#     def bike 
+#         @bike
+#     end
+
+
+
+
+
+
+
+# test = DockingStation.new
+# test.dock("bike")

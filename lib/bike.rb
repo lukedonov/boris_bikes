@@ -1,5 +1,4 @@
 
-
 class Bike
     
     # def docked?
@@ -9,4 +8,6 @@ class Bike
     def working?
         return true
     end
+
+
 end
