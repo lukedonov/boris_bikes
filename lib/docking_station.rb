@@ -13,10 +13,11 @@ class DockingStation
 
     def dock(bike)
       # @bikes.push(bike)
-      bike
+      @bike = bike
     end
 
     def bike
+      @bike
 
     end
 
