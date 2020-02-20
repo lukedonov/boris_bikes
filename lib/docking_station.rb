@@ -1,7 +1,7 @@
 require_relative 'bike'
 
 class DockingStation
-  attr_reader :bike
+  attr_reader :bike, :capacity
 
     
     def release_bike
@@ -10,12 +10,10 @@ class DockingStation
     end
 
     def dock(bike)
-      # @bikes.push(bike)
+      raise "No space in docking station"if @bike
       @bike = bike
     end
 end
-
-
 
 
 
