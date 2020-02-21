@@ -1,21 +1,34 @@
 require_relative 'bike'
 
 class DockingStation
+  attr_reader :bikes
+
     DEFAULT_CAPACITY = 20
+    # STATUS = true
     def initialize
        @bikes = []
        @capacity = DEFAULT_CAPACITY
+      #  @status = STATUS
     end
 
     def release_bike
         fail "no bikes available" if empty?
-        @bikes.pop
+        # @bikes.each_with_index do |bike,index|
+        #   @bikes.delete_at(index) if bike.value?(true)
+        # end
+      fail 'bike broken'
     end
 
     def dock(bike)
         fail "No space in docking station" if full?
+       
+        # @status = status 
         @bikes << bike
     end
+
+    # def dock_broken(bike)
+    #   @bikes << 
+
 
     def capacity(num)
       @capacity = num
@@ -32,26 +45,3 @@ class DockingStation
   end
 
 
-
-
-
-
-
-
- # def dock(bike)
-        # puts "bike has been docked"
-        # @bike = bike
-    # end
-
-#     def bike 
-#         @bike
-#     end
-
-
-
-
-
-
-
-# test = DockingStation.new
-# test.dock("bike")
